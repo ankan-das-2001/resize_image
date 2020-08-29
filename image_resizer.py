@@ -8,9 +8,10 @@ def resizes(fname, width, height):
 
     return new_image
 
+file=input('Enter the image file path: ')
 filename = input('Enter your filename: ')
 height = input('The height of the image:')
 width = input('The width of the image:')
-new_image = resizes("subscribe.png",int(height),int(width))
+new_image = resizes(file,int(height),int(width))
 cv2.imwrite(filename,new_image)
 print("Successfully executed")
